@@ -139,17 +139,7 @@
        <td>foreach iterate array values without forloops</td>
        <td>var arr=["Bilbo", "Gandalf", "Nazgul"]</td>
      </tr>
-     <tr>
-      <td>15</td>
-      <td>find</td>
-      <td>const ages = [3, 10, 18, 20];
-
-        function checkAge(age) {
-          return age > 18;
-        }</td>
-      <td>finds the value </td>
-      <td>o/p:20</td>
-     </tr>
+    
      <tr>
        <td>16</td>
        <td>filter</td>
@@ -182,6 +172,65 @@
        <td>var user1 = new User("Jon", "Snow")
         console.log(user1)
         var user2 = new User("Ned", "Stark")</td>
+     </tr>
+     <tr>
+      <td>15</td>
+      <td>find</td>
+      <td>const ages = [3, 10, 18, 20];
+
+        function checkAge(age) {
+          return age > 18;
+        }</td>
+      <td>finds the value </td>
+      <td>o/p:20</td>
+     </tr>
+     <tr>
+      <td>19</td>
+      <td>findindex</td>
+      <td>const ages = [3, 10, 18, 20]; <br><br>
+        function checkAge(age) {
+          return age > 18;
+        }
+      </td>
+      <td>findIndex() returns the index of the first element that passes a test (provided by a function)</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>20</td>
+      <td>lastindex</td>
+      <td>const fruits = ["Apple", "Orange", "Apple", "Mango"]; <br><br>
+        let index = fruits.lastIndexOf("Apple");</td>
+      <td>lastIndexOf() returns the last index (position) of a specified value:</td>
+      <td>2</td>
+     </tr>
+     <tr>
+      <td>21</td>
+      <td>length</td>
+      <td>const fruits = ["Apple", "Orange", "Apple", "Mango"]; <br><br>
+          fruits.length</td>
+      <td>length will findout the elements count</td>
+      <td>4</td>
+     </tr>
+     <tr>
+      <td>22</td>
+      <td>reduce</td>
+      <td>const numbers = [175, 50, 25]; <br><br>
+           numbers.reduce(myFunc);</td>
+      <td>Subtract the numbers in the array, starting from the left: <br>
+        function myFunc(total, num) {
+          return total - num;
+        }
+      </td>
+      <td>100</td>
+     </tr>
+     <tr>
+      <td>23</td>
+      <td>tolocaleString</td>
+      <td>const d = new Date(); <br>
+        let text = d.toLocaleString();
+       </td>
+      <td> document.getElementById("demo").innerHTML = d;</td>
+      <td>11/11/2022, 10:20:59 AM</td>
      </tr>
   </table>
     <script>
@@ -248,7 +297,7 @@
   console.log(pets.indexOf(1,2));
      */ 
      var animals=["wilds","bugs"];
-     console.log(animals)
+     console.log(animals);
 
 
 
