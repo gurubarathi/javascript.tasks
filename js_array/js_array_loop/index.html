@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+     var supermarket=[
+         {type:'groceries',total:3,categories:[
+                          {type:'packed',names:['kulampu masala','chicken','mutton']},
+                          {type:'weighs',names:['nuts','dairies','dals']}]
+         },
+         {type:'vegetables',total:2,categories:[
+             {type:'leaves',names:['keerai','onion springs','briyani leaves']},
+             {type:'roots',names:['potato','onion','carrot']}]
+         },
+         {type:'snacks',total:3,categories:[
+             {type:'biscuts',names:['britania','sunfeast','unibic']},
+             {type:'drinks',names:['7-up','pepsi','sprite','dew']},
+             {type:'chips',names:['potato','bananna','butter-curd']}]
+         }
+     ]
+
+     for(i=0;i<supermarket.length;i++)
+     {
+         console.log('Type: '+ supermarket[i].type+' total: '+supermarket[i].total+' categories: ');
+        for(j=0;j<2;j++){
+        
+        console.log ('type:'+supermarket[i].categories[j].type+' names:')
+     
+        for(k=0;k<2;k++){        
+        console.log (supermarket[i].categories[j].names[k]);     
+     }
+    }
+
+    }
+        let details = [{ name: 'guru', age: 25, Education: 'BE' },
+        { name: 'barathi', age: 26, Education: 'CSE' },
+        { name: 'athiban', age: 12, Education: '6th' }]
+
+        let student_id = [{ name: 'aathivk', idno: 1223, class: 'A' },
+        { name: 'aravind', idno: 1232, class: 'B' }]
+
+        var supermarket = [{ type: 'groceries', total: 3, categories: ['packed', 'weighs'] }];
+        var packed_items = { type: 'packed', names: ['kulampu masala', 'chicken', 'mutton'] };
+        var weighing_items = { type: 'weighs', names: ['nuts', 'dairies', 'dals'] };
+        var vegetables_store = { type: 'vegetables', total: 2, categories: ['leaves', 'roots'] };
+        var leaves_veg = { type: 'leaves', names: ['keerai', 'onion springs', 'briyani leaves'] };
+        var roots_veg = { type: 'roots', names: ['potato', 'onion', 'carrot'] };
+
+
+        var snacks_market = { type: 'snacks', total: 3, categories: ['biscuts', 'drinks'] };
+        var biscuts_snacks = { type: 'biscuts', names: ['britania', 'sunfeast', 'unibic'] };
+        var drinks_snacks = { type: 'drinks', names: ['7-up', 'pepsi', 'sprite', 'dew'] };
+        var chips_snacks = { type: 'chips', names: ['potato', 'bananna', 'butter-curd'] };
+
+
+    </script>
+</body>
+
+</html>
