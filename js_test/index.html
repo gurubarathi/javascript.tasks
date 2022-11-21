@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+          
+        // // Finding even numbers using forloop 
+        // let a = [5, 4, 9, 14, 96];
+        // for (i = 0; i < a.length; i++) {
+        //     if (a[i] % 2 == 0) {
+        //         console.log(a[i]);
+        //     }
+        // }
+        // //get passengers name from given array into empty array
+        // const passengers = [
+
+        //     { id: 1,
+        //       passengerName: "Freddie Mercury",
+        //       isVegetarianorVegan: false, 
+        //       connectedFlights: 2 
+        //     },
+
+        //     {
+        //         id: 2,
+        //         passengerName: "Amy Winehouse",
+        //         IsVegetarianOrVegan: true, 
+        //         connectedFlights: 4
+        //     },
+
+        //     {
+        //         id: 3,
+        //         passengerName: "Kurt Cobain", 
+        //         IsVegetarianOrVegan: true, 
+        //         connectedFlights: 3
+        //     },
+
+        //     {
+        //         id: 4,
+        //         passengerName: "Hichael Jackson", 
+        //         isVegetarianorVegan: true, 
+        //         connectedFlights: 1
+        //     }]
+        //     let newArray=[];
+        //      passengers.forEach((name)=>{
+        //         let newNames = name.passengerName;
+                  
+        //           newArray.push(newNames);
+                  
+        //      }); 
+        //      console.log(newArray);
+
+
+        //     //find a given number is decimal or integer
+        //    let given=prompt("enter a number");
+        //   if(given%1===0){
+        //     console.log(given+" is integers");
+        //   }
+        //   else{
+        //     console.log(given+" is decimal");
+        //   }
+        //   //fixbuzz nos printing
+        //   for(i=1;i<=100;i++){
+        //     if(i%3==0 && i%5==0){
+        //       document.write("fixbuzz"+"<br>");
+        //     }
+        //     else if (i%3==0){
+        //         document.write("fix"+"<br>");  
+        //     }
+        //     else if(i%5==0){
+        //         document.write("buzz"+"<br>");  
+        //     }
+        //     else{
+        //         document.write( i+"<br>");  
+        //     }
+        //   }
+
+        
+      ////sort method for array members by values
+
+      const passengers = [
+
+              { id: 1,
+                passengerName: "Freddie Mercury",
+                isVegetarianorVegan: false, 
+                connectedFlights: 2 
+              },
+
+              {
+                  id: 2,
+                  passengerName: "Amy Winehouse",
+                  IsVegetarianOrVegan: true, 
+                  connectedFlights: 4
+              },
+
+              {
+                  id: 3,
+                  passengerName: "Kurt Cobain", 
+                  IsVegetarianOrVegan: true, 
+                  connectedFlights: 3
+              },
+
+              {
+                  id: 4,
+                  passengerName: "Hichael Jackson", 
+                  isVegetarianorVegan: true, 
+                  connectedFlights: 1
+              }]
+
+             passengers.sort(function (a,b) {
+              return a.connectedFlights-b.connectedFlights})
+              console.log(passengers);
+        
+            
+         
+    </script>
+</body>
+
+</html>
