@@ -27,15 +27,19 @@
           margin-left: 10px;  
             
         }
-        .inputs i{
-          margin-left:-20px;
-          margin-top:10px;
+        .inputs{
+          display: flex;
+        }
+         i {
+            content:"bi-eye";
+            margin-left: -20px;
+            align-items: center;
         }
         button{
             width:100px;
             margin:0 auto;
+         }
 
-        }
     </style>
 </head>
 <body>
@@ -47,22 +51,27 @@
      <div class="inputs">
         <label for="password">Password</label>
         <input type="password" id="password" name="password">
-        <i class="bi bi-eye-slash"></i>
+        <i class="bi bi-eye-slash" id="slash"></i>
+        <i class="bi bi-eye" id="n-slash"></i>
+        
     </div>
      <button type="submit" id="submit">Login</button>
      
     </form>
+
+    <!--  script file-->
+
     <script>
-       let pass_field = document.querySelector("#password");
+       let pass = document.querySelector("#password");
        let eye_btn = document.querySelector("i");
        eye_btn.addEventListener("click",function(){
-        if(pass_field.type==="password"){
-            pass_field.type="text";
-            eye_btn.classList.remove("slash");
+        if(pass.type==="password"){
+            pass.type="text";
+            this.classList.toogle("bi-eye");
         }
         else{
-            pass_field.type="password";
-            eye_btn.classList.add("slash");
+            pass.type="password";
+            this.classList.toogle("bi-eye-slash");
         }
         }
        );
