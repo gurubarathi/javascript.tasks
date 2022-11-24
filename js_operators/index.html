@@ -1,153 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>js_operators</title>
-</head>
-<body>
-  <!--js operators-->
-  <p>
-  <ul>
-    <li>Airthematic operators</li>
-    <li>Assignment operators</li>
-    <li>Comparison operators</li>
-    <li>Logical operators</li>
-  </ul>
-  </p>
-  <script>
-    // /*Airthematic operators*/
-    // let a = 10;
-	// let b = 20;
-	// let c = a+b;
-	// let g = a-b;
-	// let d = a*b;
-	// let e= a/b;
-	// let f= a%b;
-	// let h = a**2;
-	
-	// /*Assignment operators*/
-	// let one = 10;
-	//     two=one;
-	//  one+=two;
-	//  two*=2;
-	// let three = 30;
-	//  three%=3;
-	// console.log(three);
-	// let four = 2;
-	 
-	// for (i=1; i<=four; ++i){
-	//   console.log(i);
-	// }
-	// // <!--Comparison operator-->
-	// let new1=10;
-	// let new2=10;
-	// console.log(new1>=new2);
-	
-	// let new3=10;
-	// let new4 = "10";
-	// console.log(new3===new4);
-	
-	// // Logical operator
-	
-	// let con1=12;
-	// let con2 = 24;
-	// let con3=36;
-	// let con4=48;
-	// if(con1>con2 && con2>con1){
-	// console.log(true);
-	// }else{
-	// console.log(false);}
-	
-	// if(con1>con2 || con2>con1){
-	// console.log(true);
-	// }else{
-	// console.log(false);}
-	
-	// if(!(con1>con2 || con2>con1)){
-	// console.log(true);
-	// }else{
-	// console.log(false);}
-	
-	// let value = ("enter a number")
-	// for (i=1; i<=value;i++){
-	//   document.write(i+"<br>");
-	// }
-	
-	// /*largest no*/
-	
-	// let num1=parseInt(prompt ("enter a 1st no"));
-	// let num2=parseInt(prompt ("enter a 2nd no"));
-	// let num3=parseInt(prompt ("enter a 3rd no"));
-	
-	// if(num1>num2)
-	// {
-	//   if(num1>num3){
-	//     document.write(num1+" -1st is larger than others");
-	//     }
-	//   else{
-	//     document.write(num3+" -3rd is larger than others");
-	//   }
-	// }
-	// else
-	// {
-	// 	 if(num2>num3){
-	// 	 document.write(num2+" -2nd is larger than others");
-	// 	}
-	// 	else  {
-	// 	 document.write(num3+" -3rd is larger than others");
-	// 	}
-	// }
-	/*for loop */
-	let num1=parseInt(prompt("enter the number"));
-	let num2=parseInt(prompt("enter the number"));
-	let num3=parseInt(prompt("enter the number"));
-	let num4=parseInt(prompt("enter the number"));
-	// for(i=1;i<=no;i++){
-	//   for(j=1;j<=no;j++){
-	//     document.write(i);
-	//   }
-	//   document.write("<br>");
-	// }
 
-	// for(i=1;i<=no;i++){
-	// 	for(j=1;j<=i;j++){
-	//     document.write(i);
-	//   }
-	//   document.write("<br>");
-	// }
-	if(num1>num2)
-	{
-	  if(num1>num3)
-	  {
-			if(num1>num4){
-				document.write(num1+" 1st no is larger than others");
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js_operators</title>
+</head>
+
+<body>
+	<!--js operators-->
+	<p>
+	<ul>
+		<li>Airthematic operators</li>
+		<li>Assignment operators</li>
+		<li>Comparison operators</li>
+		<li>Logical operators</li>
+	</ul>
+	</p>
+	<script>
+		// /*Airthematic operators*/
+		// let a = 10;
+		// let b = 20;
+		// let c = a+b;
+		// let g = a-b;
+		// let d = a*b;
+		// let e= a/b;
+		// let f= a%b;
+		// let h = a**2;
+
+		// /*Assignment operators*/
+		// let one = 10;
+		//     two=one;
+		//  one+=two;
+		//  two*=2;
+		// let three = 30;
+		//  three%=3;
+		// console.log(three);
+		// let four = 2;
+
+		// for (i=1; i<=four; ++i){
+		//   console.log(i);
+		// }
+		// // <!--Comparison operator-->
+		// let new1=10;
+		// let new2=10;
+		// console.log(new1>=new2);
+
+		// let new3=10;
+		// let new4 = "10";
+		// console.log(new3===new4);
+
+		// // Logical operator
+
+		// let con1=12;
+		// let con2 = 24;
+		// let con3=36;
+		// let con4=48;
+		// if(con1>con2 && con2>con1){
+		// console.log(true);
+		// }else{
+		// console.log(false);}
+
+		// if(con1>con2 || con2>con1){
+		// console.log(true);
+		// }else{
+		// console.log(false);}
+
+		// if(!(con1>con2 || con2>con1)){
+		// console.log(true);
+		// }else{
+		// console.log(false);}
+
+		// let value = ("enter a number")
+		// for (i=1; i<=value;i++){
+		//   document.write(i+"<br>");
+		// }
+
+		// /*largest no*/
+
+		// let num1=parseInt(prompt ("enter a 1st no"));
+		// let num2=parseInt(prompt ("enter a 2nd no"));
+		// let num3=parseInt(prompt ("enter a 3rd no"));
+
+		// if(num1>num2)
+		// {
+		//   if(num1>num3){
+		//     document.write(num1+" -1st is larger than others");
+		//     }
+		//   else{
+		//     document.write(num3+" -3rd is larger than others");
+		//   }
+		// }
+		// else
+		// {
+		// 	 if(num2>num3){
+		// 	 document.write(num2+" -2nd is larger than others");
+		// 	}
+		// 	else  {
+		// 	 document.write(num3+" -3rd is larger than others");
+		// 	}
+		// }
+		/*for loop */
+		let num1 = parseInt(prompt("enter the number"));
+		let num2 = parseInt(prompt("enter the number"));
+		let num3 = parseInt(prompt("enter the number"));
+		let num4 = parseInt(prompt("enter the number"));
+		// for(i=1;i<=no;i++){
+		//   for(j=1;j<=no;j++){
+		//     document.write(i);
+		//   }
+		//   document.write("<br>");
+		// }
+
+		// for(i=1;i<=no;i++){
+		// 	for(j=1;j<=i;j++){
+		//     document.write(i);
+		//   }
+		//   document.write("<br>");
+		// }
+		if (num1 > num2) {
+			if (num1 > num3) {
+				if (num1 > num4) {
+					document.write(num1 + " 1st no is larger than others");
+				}
+				else {
+					document.write(num4 + " 4th no is larger than others");
+				}
 			}
-			else{
-				document.write(num4+" 4th no is larger than others");
+			else {
+				if (num3 > num4) {
+					document.write("(" + num3 + ")" + " 3rd no is larger than others");
+				}
+				else {
+					document.write("(" + num4 + ")" + " 4th no is larger than others");
+				}
 			}
-	  }
-    }
-	else if (num2>num3)
-	{
-	   if(num2>num4)
-	   {
-		document.write(num2+" 2nd no is larger than others");
 		}
-		else{
-		document.write(num4+" 4th no is larger than others");
+		else if (num2 > num3) {
+			if (num2 > num4) {
+				document.write("(" + num2 + ")" + " 2nd no is larger than others");
+			}
+			else {
+				document.write("(" + num4 + ")" + " 4th no is larger than others");
+			}
+
 		}
-		
-	}
-	else{
-		if(num3>num4){
-			document.write(num3+" 3rd no is larger than others");
+		else {
+			if (num3 > num4) {
+				document.write("(" + num3 + ")" + " 3rd no is larger than others");
+			}
+			else {
+				document.write("(" + num4 + ")" + " 4th no is larger than others");
+			}
 		}
-		else{
-			document.write(num4+" 4th no is larger than others");
-		}
-	}
-  </script>
+	</script>
 </body>
+
 </html>
