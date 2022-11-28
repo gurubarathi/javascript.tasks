@@ -155,20 +155,95 @@
 		// 	}
 		// }
 
-		const a = [1,2,3,4,5,6];
-		const b=[];
+		// const a = [1,2,3,4,5,6];
+		// const b=[];
+		// // for(i=0;i<a.length;i++){
+		// // 	b[i]=a[i];
+		// // }
+		// // console.log(b);
 		// for(i=0;i<a.length;i++){
-		// 	b[i]=a[i];
+		// 	function redo (){
+		// 		let c= a[i];
+		// 		return c;
+		// 	}
+		// 	b[i]=redo();
 		// }
 		// console.log(b);
-		for(i=0;i<a.length;i++){
-			function redo (){
-				let c= a[i];
-				return c;
-			}
-			b[i]=redo();
-		}
-		console.log(b);
+
+		// let length=parseInt(prompt("Enter a length of a array"));
+		// let array=[];
+		// for(i=0;i<length;i++){
+		// 	let value = parseInt(prompt("enter a value"));
+		// 	array[i]=value;
+		// 	//array.push(value);
+		// }
+		// console.log(array);
+
+     /***************
+	    Array of Array with conditions
+	 *****************************************/
+		var a=[];
+		let x=parseInt(prompt("enter  main array length"));
+			var b ;
+			for(i=0;i<x;i++){
+			let y =parseInt(prompt("enter  sub array length"));
+			doit(y);
+		    } 
+			console.log(a);
+
+
+			/*****function*****/
+
+            function doit(z){
+				if(z==0){
+					b=parseInt(prompt("enter a value"));
+					a[i]=b;
+					}
+				else{
+					b=[];
+					for(j=0;j<z;j++){
+							b[j]=parseInt(prompt("enter  values"));
+						}
+					a[i]=b;
+				}
+				return a;
+				}
+				
+		   
+	    
+       /***************
+	    objects in 
+	 *****************************************/
+		// let students=[
+		// 	{
+		// 	name:"guru",
+		// 	age:25,
+		// 	degree:"civil"
+		//     },
+		// 	{
+		// 	name:"vel",
+		// 	age:26,
+		// 	degree:"mech"	
+		// 	},
+		// 	{
+		//     name:"raji",
+		// 	age:21,
+		// 	degree:"cse"
+		// 	}]
+
+		//  students.forEach(e=>{
+		// 	console.log("student name:"+e.name+" age : "+e.age+ " degree: "+e.degree);
+		//  });
+
+		
+
+
+
+
+
+
+
+
 	
         
 		
