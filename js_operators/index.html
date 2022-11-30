@@ -293,81 +293,143 @@
 	 *****************************************/
 
 
-        //     function doit(a,z){
-		// 		if(z==0){
-		// 			b=parseInt(prompt("enter a value"));
-		// 			a[i]=b;
-		// 			}
-		// 		else{
-		// 			b=[];
-		// 			for(j=0;j<z;j++){
-		// 					b[j]=parseInt(prompt("enter  values"));
-		// 				}
-		// 			a[i]=b;
-		// 		}
-		// 		}
+            function doit(a,z){
+				if(z==0){
+					b=parseInt(prompt("enter a value"));
+					a[i]=b;
+					}
+				else{
+					b=[];
+					for(j=0;j<z;j++){
+							b[j]=parseInt(prompt("enter  values"));
+						}
+					a[i]=b;
+				}
+			 	}
 
 
-		// 		function read(a,main){	
-		// 		if(a.length-1< main){
-		// 			alert("enter vaild index");
+				function read(a,main){	
+				if(a.length-1 < main){
+					alert("enter vaild index");
 				
-		// 		}
-		// 		else{
-		// 			if(a[main]!=[]){
-		// 				console.log(a[main]);
-		// 			}
-		// 			else{
-		// 			var sub=parseInt(prompt("enter element index"));
-		// 		    console.log(a[main][sub]);
-		// 			}
+				}
+				else{
+					if(a[main]!=[]){
+						console.log(a[main]);
+					}
+					else{
+					var sub=parseInt(prompt("enter element index"));
+				    console.log(a[main][sub]);
+					}
 				  
-		// 		}
-		//     }
+				}
+		    }
+
+			function updates(a,main){
+				
+				if(a.length-1 < main){
+					alert("enter vaild index");
+				
+				}
+				else{
+
+                    var sub=parseInt(prompt("enter element index"));
+				    console.log(a[main][sub]);
+				}
+                var neww=prompt("enter a new value");
+				a[main][sub]=neww;
+				console.log(a);
+			}
+
+		function deleteElement(a,main){
+
+			if(a.length-1 < main){
+
+					alert("enter vaild index");
+				
+				}
+				else{
+
+                    var sub=parseInt(prompt("enter delet element index"));
+					for(i=0;i<=a.length-1;i++){
+						if (a[main][i]==a[main][sub]){
+							for(j=sub;j<a.length-1;j++){
+
+								a[main][j]=a[main][++j];
+								
+							}
+						}
+						else{
+
+						}
+					}
+				    
+				}
+		}
 
 
-		// var a=[];
-		// let x=parseInt(prompt("enter  main array length"));
-		// 	var b ;
-		// 	for(i=0;i<x;i++){
-		// 	let y =parseInt(prompt("enter  sub array length"));
-		// 	doit(a,y);
-		//     } 
-		// 	console.log(a);	
-		//  var main=parseInt(prompt("enter array index"));
+		var a=[];
+		let x=parseInt(prompt("enter  main array length"));
+			var b ;
+			for(i=0;i<x;i++){
+			let y =parseInt(prompt("enter  sub array length"));
+
+			doit(a,y);
+		    } 
+			console.log(a);	
+        var main=parseInt(prompt("enter array index"));
+		   deleteElement(a,main);
+		  	
+		//  updates(a,main);
+		 
+
+		 
+
+		
+
 		//  read(a,main);
+
+
 		 /***************
 		  object create and read by index
 	 *****************************************/
-	 function createObject(Array,nos){
-			for(i=0;i<nos;i++){
-				var object={"Name":"","Age":"","Dept":""};
-				let Name=prompt("Enter name");
-				let Age=parseInt(prompt("Enter  age"));
-				let Dept=prompt("Qualification");
-				object.Name=Name;
-				object.Age=Age;
-				object.Dept=Dept;
-				Array[i]=object;
-			}
-			console.log(Array);
-		}
+	
+	//  function createObject(Array,nos){
+	// 		for(i=0;i<nos;i++){
+	// 			// var object={Name:"",Age:"",Dept:""};
+	// 			function man (name,age,dept){
+	// 				this.Name=name;
+	// 				this.Age=age;
+	// 				this.Dept=dept;
+	// 			}
+	// 			let name=prompt("Enter name");
+	// 			let age=parseInt(prompt("Enter  age"));
+	// 			let dept=prompt("Qualification");
+	// 			const students=new man(name,age,dept);
+	// 			// object.Name=Name;
+	// 			// object.Age=Age;
+	// 			// object.Dept=Dept;
+	// 			Array[i]=students;
+	// 		}
+	// 		console.log(Array);
+	// 	}
         
-		function readObject (Array,w){
-			    var e={};
-                e=Array[w];
-				var key;
-				  key = prompt("Enter a key Name/Age/Dept");
-				console.log((e.key));
-	   }
+	// 	function readObject (Array,w){
+	// 		    const ans = new man(name,age,dept);
+	// 		    ans= Array[w];
+	// 			key=prompt("Enter a key Name/Age/Dept");
+	// 		    console.log(this.key);
+	//    }
 		
-	   let length = parseInt(prompt("enter a no of object"));
-	   let Array=[];
-	   createObject(Array,length);
+	//    let length = parseInt(prompt("enter a no of object"));
 
-	   let index=parseInt(prompt("enter the index of array"));
+	//    let Array=[];
+	//    createObject(Array,length);
 
-	   readObject(Array,index);
+	//    let index=parseInt(prompt("enter the index of array"));
+	//     readObject(Array,index);
+
+	
 
 	  
 
